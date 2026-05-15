@@ -9,7 +9,7 @@ import 'package:go_router/go_router.dart';
 import '../dashboard/alerts_screen.dart';
 import 'report_emergency_screen.dart';
 import '../citizen/help_chat_screen.dart';
-import '../citizen/voice_chat_screen.dart';
+// import '../citizen/voice_chat_screen.dart';
 
 class CitizenDashboard extends StatefulWidget {
   const CitizenDashboard({super.key});
@@ -222,16 +222,16 @@ class _CitizenDashboardState extends State<CitizenDashboard>
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           // Voice AI button
-          FloatingActionButton(
-            heroTag: 'voiceBtn',
-            backgroundColor: const Color(0xFF1565C0),
-            elevation: 4,
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const VoiceChatScreen()),
-            ),
-            child: const Icon(Icons.mic, color: Colors.white, size: 26),
-          ),
+          // FloatingActionButton(
+          //   heroTag: 'voiceBtn',
+          //   backgroundColor: const Color(0xFF1565C0),
+          //   elevation: 4,
+          //   onPressed: () => Navigator.push(
+          //     context,
+          //     MaterialPageRoute(builder: (_) => const VoiceChatScreen()),
+          //   ),
+          //   child: const Icon(Icons.mic, color: Colors.white, size: 26),
+          // ),
           const SizedBox(height: 12),
           // Text chat button
           FloatingActionButton.extended(
